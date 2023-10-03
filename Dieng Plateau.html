@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dieng Plateau</title>
+    <style>
+      *,
+      html {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f4f4f4;
+      }
+      nav {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 2rem;
+      }
+      nav ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        list-style-type: none;
+      }
+      nav ul li a {
+        text-decoration: none;
+        font-family: "Segoe UI", sans-serif;
+        color: #040a18;
+        font-weight: 600;
+        padding: 8px 0;
+        transition: all;
+        transition-duration: 300ms;
+        border-bottom: 1px solid rgba(255, 166, 0, 0);
+      }
+      nav ul li a:hover {
+        color: #040a18;
+        border-bottom: 1px solid#040a18;
+      }
+      .gambar-1 {
+        width: 100%;
+        height: 100%;
+      }
+      h1 {
+        font-family: system-ui, sans-serif;
+        font-size: 64px;
+        padding: 10px 0px;
+        margin-bottom: 16px 0px 20px;
+      }
+      h4 {
+        font-family: "Sen", sans-serif;
+        font-size: 1.25rem !important;
+        font-weight: 500;
+        padding-bottom: 10px;
+        margin: 0 0 16px;
+      }
+      h2 {
+        font-family: "Sen", sans-serif;
+        padding-bottom: 0px;
+      }
+      p {
+        letter-spacing: 1px;
+        word-spacing: 0.1px;
+        line-height: 25px;
+        font-family: "Lato", sans-serif;
+        text-align: justify;
+        width: 70%;
+        margin: 0 0 20px;
+        color: #191919;
+      }
+      .a-content {
+        margin-left: 10%;
+        margin-right: 25%;
+        padding-top: 10px;
+        padding-bottom: 65px;
+      }
+      .gambar-2 {
+        width: 67%;
+      }
+      .gambar-3 {
+        width: 67%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      h3 {
+        font-family: "Sen", sans-serif;
+      }
+      .a-numbering {
+        padding-bottom: 5px;
+      }
+      .link-informasi {
+        padding-bottom: 20px;
+      }
+      footer {
+    bottom: 0;
+}
+
+.footer {
+    background-color: #040a18;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer .footer-left {
+    width: 30%;
+}
+
+.footer h3 {
+    color: #f5f5f5;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Time New Roman', Times, serif;
+}
+
+.footer .footer-left img {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.footer .footer-left .credit-cards {
+    width: 100%;
+}
+
+.footer .footer-copyright {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
+}
+
+.footer .footer-center {
+    width: 35%;
+}
+
+.footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color: rgb(22, 255, 177);
+    text-decoration: none;
+}
+
+.footer .footer-right {
+    width: 30%;
+}
+
+.footer .footer-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.footer .footer-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-media {
+    margin-top: 25px;
+}
+
+.footer .footer-media a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-media a:hover {
+    background-color: rgb(0, 122, 82);
+}
+
+@media (max-width: 880px) {
+
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .footer .footer-center i {
+        margin-left: 0px;
+    }
+
+}
+
+
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Beranda</a>
+        </li>
+        <li>
+          <a href="#">Tentang Kami</a>
+        </li>
+        <li>
+          <a href="#">Travelling</a>
+        </li>
+        <li>
+          <a href="#">Kontak Kami</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- NAVBAR SELESAI -->
+
+    <!-- GAMBAR 1 -->
+
+    <img class="gambar-1" src="assets/headerdieng.webp" alt="dieng-indonesia" />
+
+    <!-- GAMBAR 1 SELESAI -->
+
+    <!-- MAIN KONTEN  -->
+    <div class="a-content">
+      <h1>Dieng Plateau</h1>
+      <h4>Dataran Tinggi Dieng , Wonosobo , Jawa Tengah</h4>
+
+      <p>
+        Dieng Plateau, atau dataran tinggi Dieng, merupakan salah satu situs
+        bersejarah paling terkenal di Jawa Tengah, Indonesia. Dataran ini sudah
+        sangat akrab bagi masyarakat Indonesia, karena terkenal dengan pesona
+        alamnya yang indah di Pulau Jawa, dikelilingi oleh pegunungan hijau dan
+        hamparan awan yang memunculkan udara dingin yang segar.
+      </p>
+
+      <p>
+        Selain keindahan alamnya yang tak tertandingi, Dieng juga menyimpan
+        banyak objek wisata geologi dan sejarah yang menarik untuk dikunjungi.
+        Beberapa tempat wisata di Dieng antara lain kawah, telaga, dan kompleks
+        kawasan Candi Hindu yang mampu menarik para wisatawan untuk kembali
+        berkunjung. Keindahannya tidak hanya terkenal di dalam negeri, namun
+        namanya juga telah meraih ketenaran hingga di luar negeri.
+      </p>
+
+      <img class="gambar-2" src="assets/dieng.webp" alt="iklim-di-dieng-indonesia" />
+
+      <h2>Iklim</h2>
+      <p>
+        Dataran Tinggi Dieng memiliki iklim tropis. Karena terletak pada ±2.000
+        meter di atas permukaan laut dan terhimpit oleh 4 gunung, udaranya cukup
+        dingin. Pada musim kemarau di siang hari suhu berkisar antara 15o C –
+        10o C sedangkan pada malam hari suhu berkisar antara 5o C – 10o C , dan
+        kadang-kadang mencapai 0o dan biasanya kondisi tersebut disebut “Bun
+        Upas”, yaitu salju tipis atau embun yang menyapu dataran tinggi dengan
+        suhu di bawah titik beku. Akan tetapi pada bulan Juni, Juli dan Agustus
+        sirkulasi udara biasanya berganti musim. Maka dalam bulan-bulan tersebut
+        suhu udarapun berubah.
+      </p>
+
+      <h2>Letak</h2>
+      <p>
+        Dieng terletak di sebelah barat Gunung Sindoro dan Gunung Sumbing, Dieng
+        merupakan kawasan vulkanik aktif yang juga gunung api raksasa berbentuk
+        dataran luas dengan panjang kurang lebih 9 mil (14 km) dan lebar 4 mil
+        (6 km) memanjang dari arah barat daya-tenggara. Ketinggian Dieng
+        mencapai 2000 Meter di atas permukaan laut.
+      </p>
+
+      <h2>Pariwisata</h2>
+      <p>
+        Fungsi utama wilayah Dataran Tinggi Dieng saat ini selain sebagai
+        dataran pertanian dan perkebunan, juga merupakan daerah yang sedang
+        dikembangkan dari sektor pariwisata dan pusat industri listrik tenaga
+        panas atau geotermal.
+      </p>
+
+      <p>
+        Wilayah Dataran Tinggi Dieng diapit oleh bukit-bukit yang besar dan
+        kecil, gunung-gunung yang diselingi lembah dan jurang dan curam, dihiasi
+        oleh tumbuhan dan semak-semak dengan hawa dingin menjadikan dataran
+        tinggi Dieng sebagai tempat wisata dengan pemandangan alam yang elok
+        yang dapat memberikan perasaan tenang.
+      </p>
+
+      <p>
+        Potensi pariwisata di Dataran Tinggi Dieng cukup menonjol baik dalam
+        lingkup regional, nasional, maupun internasional. Mengingat potensi
+        kepariwisataan pada kawasan tersebut berupa perpaduan dari beberapa
+        keajaiban alam dan peninggalan sejarah.
+      </p>
+
+      <p>
+        Kondisi kepariwisataan di wilayah Dataran Tinggi Dieng dapat dibedakan
+        menjadi 2 kategori:
+      </p>
+
+      <h2 class="a-numbering">1. Wisata Alam</h2>
+      <p>
+        Objek wisata ini terbentuk secara alamiah dan bersifat wisata
+        pegunungan. Jenis wisata alam Dataran Tinggi Dieng dapat difokuskan pada
+        beberapa objek wisata seperti : kawah, telaga, pegunungan. Berikut
+        beberapa objek wisata alam yang terkenal dan sering di kunjungi oleh
+        wisatawan di Dieng :
+      </p>
+
+      <h3>Kawah Sikidang</h3>
+      <img
+        class="gambar-3"
+        src="assets/Kawah-Sikidang-DisparbudBanjarnegara.jpg"
+        alt="Kawah-Sikidang-DisparbudBanjarnegara"
+      />
+
+      <p>
+        Kawah ini adalah kawah vulkanik dengan lubang kepundan berada di daerah
+        dataran sehingga kawah dengan luas sekitar 200 m2 serta terdapat pada
+        tanah yang datar, sehingga dapat disaksikan langsung dari bibir kawah.
+        Kawah Sikidang merupakan kawah aktif terbesar di dataran Tinggi Dieng.
+        Sampai saat ini Kawah Sikidang masih aktif mengeluarkan uap panas
+        sehingga air kawah mendidih dan bergolak. Bau khas pegunungan berapi,
+        kepulan asap putih selalu menghiasi penampilan kawah ini. Uap panas yang
+        keluar disertai semburan air yang mendidih berwarna kelabu selalu muncul
+        berpindah-pindah dan melompat-lompat dari seperti seekor kidang.
+      </p>
+
+      <p>
+        Kawah Sikidang menarik untuk dijadikan sebagai objek wisata karena
+        selain menyuguhkan pesona alam vulkanik juga terdapat beberapa daya
+        tarik wisata buatan yang dikelola oleh masyarakat setempat seperti
+        penyewaan sepeda motor, kuda, spot-spot foto, berfoto dengan binatang
+        (burung hantu), flying fox dan merebus telur dengan air dari kawah.
+      </p>
+
+      <h3>Kawah Candradimuka</h3>
+      <img
+        class="gambar-3"
+        src="assets/kawah-candaradimuka.jpg"
+        alt="kawah-candaradimuka"
+      />
+
+      <p>
+        Kawah Candradimuka adalah salah satu kawah Dieng yang terletak 7 km dari
+        Dataran Tinggi Dieng. Kawah ini sebenarnya bukan kawah gunung berapi
+        tetapi merupakan pemunculan solfatara dari rekahan tanah. Terdapat dua
+        lubang rekahan yang masih aktif mengeluarkan solfatara, yang satu
+        mengeluarkan secara terus menerus dan yang lainnya secara berselang.
+      </p>
+
+      <p>
+        Kawah Candradimuka masih belum banyak dikunjungi wisatawan, baik lokal
+        maupun mancanegara karena jaraknya yang jauh dari Dataran Tinggi Dieng,
+        fasilitas wisata yang belum lengkap dan minimnya akses jalan.
+      </p>
+
+      <div class="link-informasi">
+        <a href="https://diengplateau.com/"
+          >Untuk wisata alam lainya bisa klik disini!</a
+        >
+      </div>
+
+      <h2 class="a-numbering">2. Wisata Buatan</h2>
+      <p>
+        Objek wisata ini sengaja dibuat oleh manusia. Jenis wisata buatan
+        Dataran Tinggi Dieng dapat difokuskan pada objek-objek wisata yang cukup
+        terkenal seperti : kawasan candi, dan gardu pandang Tieng.
+      </p>
+
+      <h3>Kawasan Candi</h3>
+      <img
+        class="gambar-3"
+        src="assets/Candi-Arjuna-Dieng (1).jpg"
+        alt="candi-arjuna-dieng"
+      />
+
+      <p>
+        Selain dikenal dengan wisata alamnya yang indah, kawasan Dieng plateau
+        juga terdapat wisata sejarah berupa candi. Candi-candi tersebut
+        merupakan peningalan sejarah agama Hindu. di komplek Candi, wisatawan
+        juga disuguhkan pada hamparan rumput nan hijau dengan aneka tanaman
+        bunga warna-warni yang tumbuh.
+      </p>
+
+      <h3>Gardu Pandang Tieng</h3>
+      <img
+        class="gambar-3"
+        src="assets/gardu-pandang-tieng.jpg"
+        alt="gardu-pandang-tieng"
+      />
+
+      <p>
+        Tempat Wisata Gardu pandang Tieng merupakan sebuah bangunan yang
+        terletak di tepi jalan raya di Kawasan Dieng. Bangunan ini dijadikan
+        sebagai tempat untuk menikmati pemandangan di Kawasan Dieng yang sangat
+        indah. Pemandangan dari spot ini sangat menarik terutama pada saat pagi
+        hari yaitu pada waktu matahari terbit atau sunrise. Gardu Pandang di
+        Dieng ini memiliki ketinggian sekitar 1700 mdpl. Dari tempat ini anda
+        dapat melihat pemandangan Gunung Sindoro dan Gunung Kembang, serta
+        hamparan lahan pertanian milik masyarakat yang terlihat subur.
+      </p>
+
+      <div class="link-informasi">
+        <a href="https://diengplateau.com/"
+          >Untuk wisata buatan lainya bisa klik disini!</a
+        >
+      </div>
+    </div>
+    <!-- Main Konten Selesai -->
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer-left">
+          <h3>Dieng</h3>
+          <h3>Plateau</h3>
+          <p class="footer-copyright">2023 @denyfaishalardiyan</p>
+      </div>
+
+      <div class="footer-center">
+          <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>Indonesia</span> Jawa Tengah, Wonosobo</p>
+          </div>
+          <div>
+              <i class="fa fa-phone"></i>
+              <p>+62 8*****</p>
+          </div>
+          <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="#">denyfaishalardiyan@gmail.com</a></p>
+          </div>
+      </div>
+
+      <div class="footer-right">
+          <p class="footer-about">
+              <span>Tentang</span>
+              Dataran Tinggi Magis di Jantung Jawa. Keindahan Alam, Sejarah Kuno, dan Budaya yang Memukau.
+          </p>
+
+
+
+  </body>
+</html>
