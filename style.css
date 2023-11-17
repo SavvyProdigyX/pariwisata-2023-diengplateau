@@ -2,8 +2,9 @@
 html {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
+
 body {
   background-color: #f4f4f4;
 }
@@ -12,6 +13,9 @@ nav {
   display: flex;
   justify-content: center;
   padding: 1rem 2rem;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
 }
 nav ul {
   display: flex;
@@ -69,6 +73,7 @@ p {
   margin-right: 25%;
   padding-top: 10px;
   padding-bottom: 65px;
+  margin-top: 40px; 
 }
 .gambar-2 {
   width: 67%;
